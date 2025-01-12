@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #fbfbfb;
+    width: 100%;
+}
+
+.sumario { list-style: none; padding-left: 5px; }
+.sumario > li {margin-bottom: 8px; text-decoration: underline;}
+a { color:dimgray; text-decoration: none;}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    margin-left: 10px;
+}
+
+.titulo h1{
+    padding-top: 8px;
+    margin-bottom: 1px;
+}
+
+.titulo p{
+    padding-top: 3px;
+    margin-top: 1px;
+}
+
+#tituloSerie{
+    text-align: center;
+    font-style: italic;
+}
+
+
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+main{
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer{
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    --margin-left: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.aside-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+.box-information{
+    border: 1px solid black;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    margin: 0 0 0 30px; 
+    padding: 10px;
+}
+
+.box-information > p, ul{
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+aside {
+    border-left: solid 1px #cdcdcd;
+    padding: 10px;
+    max-width: 300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+    padding: 10px;
+}
+
+figure {
+    text-align: center;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+p{
+    text-align: justify;
+}
+
+
+table{
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border: 1px solid black;
+    padding: 8px;
+    width: 320px;
+    margin-left: 30px;
+
+}
+
+th, tr, td{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+
+figcaption{
+    font-style: italic; 
+    padding: 2px; 
+    font-size: 10px;
+}
+
+#temporadas{
+    margin-bottom: 30px;
+}
+
+.personagens li{
+    padding: 5px;
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between; /* Espaço entre os blocos */
+    align-items: center;
+    padding: 0px;
+}
+
+.container > picture{
+    margin-left: 50px;
+}
+
